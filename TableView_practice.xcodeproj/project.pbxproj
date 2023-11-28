@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B72DE9032B16368C00989CE7 /* NanumGothicBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B72DE8FF2B16368C00989CE7 /* NanumGothicBold.ttf */; };
+		B72DE9042B16368C00989CE7 /* NanumGothicBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B72DE8FF2B16368C00989CE7 /* NanumGothicBold.ttf */; };
+		B72DE9052B16368C00989CE7 /* NanumGothicBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B72DE8FF2B16368C00989CE7 /* NanumGothicBold.ttf */; };
+		B72DE9062B16368C00989CE7 /* NanumGothic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B72DE9002B16368C00989CE7 /* NanumGothic.ttf */; };
+		B72DE9072B16368C00989CE7 /* NanumGothic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B72DE9002B16368C00989CE7 /* NanumGothic.ttf */; };
+		B72DE9082B16368C00989CE7 /* NanumGothic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B72DE9002B16368C00989CE7 /* NanumGothic.ttf */; };
+		B72DE9092B16368C00989CE7 /* NanumGothicLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B72DE9012B16368C00989CE7 /* NanumGothicLight.ttf */; };
+		B72DE90A2B16368C00989CE7 /* NanumGothicLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B72DE9012B16368C00989CE7 /* NanumGothicLight.ttf */; };
+		B72DE90B2B16368C00989CE7 /* NanumGothicLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B72DE9012B16368C00989CE7 /* NanumGothicLight.ttf */; };
+		B72DE90C2B16368C00989CE7 /* NanumGothicExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B72DE9022B16368C00989CE7 /* NanumGothicExtraBold.ttf */; };
+		B72DE90D2B16368C00989CE7 /* NanumGothicExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B72DE9022B16368C00989CE7 /* NanumGothicExtraBold.ttf */; };
+		B72DE90E2B16368C00989CE7 /* NanumGothicExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B72DE9022B16368C00989CE7 /* NanumGothicExtraBold.ttf */; };
 		B7719E7E2B161D8100351B1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7719E7D2B161D8100351B1C /* AppDelegate.swift */; };
 		B7719E802B161D8100351B1C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7719E7F2B161D8100351B1C /* SceneDelegate.swift */; };
 		B7719E822B161D8100351B1C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7719E812B161D8100351B1C /* ViewController.swift */; };
@@ -16,6 +28,8 @@
 		B7719E952B161D8400351B1C /* TableView_practiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7719E942B161D8400351B1C /* TableView_practiceTests.swift */; };
 		B7719E9F2B161D8500351B1C /* TableView_practiceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7719E9E2B161D8500351B1C /* TableView_practiceUITests.swift */; };
 		B7719EA12B161D8500351B1C /* TableView_practiceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7719EA02B161D8500351B1C /* TableView_practiceUITestsLaunchTests.swift */; };
+		B7719EB52B162C1A00351B1C /* NibCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7719EB42B162C1A00351B1C /* NibCell.swift */; };
+		B7719EB72B162C2400351B1C /* NibCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7719EB62B162C2400351B1C /* NibCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +50,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B72DE8FF2B16368C00989CE7 /* NanumGothicBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumGothicBold.ttf; sourceTree = "<group>"; };
+		B72DE9002B16368C00989CE7 /* NanumGothic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumGothic.ttf; sourceTree = "<group>"; };
+		B72DE9012B16368C00989CE7 /* NanumGothicLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumGothicLight.ttf; sourceTree = "<group>"; };
+		B72DE9022B16368C00989CE7 /* NanumGothicExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumGothicExtraBold.ttf; sourceTree = "<group>"; };
 		B7719E7A2B161D8100351B1C /* TableView_practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableView_practice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7719E7D2B161D8100351B1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7719E7F2B161D8100351B1C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +67,8 @@
 		B7719E9A2B161D8500351B1C /* TableView_practiceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableView_practiceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7719E9E2B161D8500351B1C /* TableView_practiceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView_practiceUITests.swift; sourceTree = "<group>"; };
 		B7719EA02B161D8500351B1C /* TableView_practiceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView_practiceUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B7719EB42B162C1A00351B1C /* NibCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibCell.swift; sourceTree = "<group>"; };
+		B7719EB62B162C2400351B1C /* NibCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NibCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +119,7 @@
 		B7719E7C2B161D8100351B1C /* TableView_practice */ = {
 			isa = PBXGroup;
 			children = (
+				B7719EAD2B161E7B00351B1C /* Font */,
 				B7719E7D2B161D8100351B1C /* AppDelegate.swift */,
 				B7719E7F2B161D8100351B1C /* SceneDelegate.swift */,
 				B7719E812B161D8100351B1C /* ViewController.swift */,
@@ -106,6 +127,8 @@
 				B7719E862B161D8400351B1C /* Assets.xcassets */,
 				B7719E882B161D8400351B1C /* LaunchScreen.storyboard */,
 				B7719E8B2B161D8400351B1C /* Info.plist */,
+				B7719EB42B162C1A00351B1C /* NibCell.swift */,
+				B7719EB62B162C2400351B1C /* NibCell.xib */,
 			);
 			path = TableView_practice;
 			sourceTree = "<group>";
@@ -125,6 +148,17 @@
 				B7719EA02B161D8500351B1C /* TableView_practiceUITestsLaunchTests.swift */,
 			);
 			path = TableView_practiceUITests;
+			sourceTree = "<group>";
+		};
+		B7719EAD2B161E7B00351B1C /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				B72DE9002B16368C00989CE7 /* NanumGothic.ttf */,
+				B72DE8FF2B16368C00989CE7 /* NanumGothicBold.ttf */,
+				B72DE9022B16368C00989CE7 /* NanumGothicExtraBold.ttf */,
+				B72DE9012B16368C00989CE7 /* NanumGothicLight.ttf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,8 +265,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B72DE9092B16368C00989CE7 /* NanumGothicLight.ttf in Resources */,
+				B72DE9062B16368C00989CE7 /* NanumGothic.ttf in Resources */,
 				B7719E8A2B161D8400351B1C /* LaunchScreen.storyboard in Resources */,
+				B7719EB72B162C2400351B1C /* NibCell.xib in Resources */,
 				B7719E872B161D8400351B1C /* Assets.xcassets in Resources */,
+				B72DE9032B16368C00989CE7 /* NanumGothicBold.ttf in Resources */,
+				B72DE90C2B16368C00989CE7 /* NanumGothicExtraBold.ttf in Resources */,
 				B7719E852B161D8100351B1C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,6 +280,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B72DE90A2B16368C00989CE7 /* NanumGothicLight.ttf in Resources */,
+				B72DE9072B16368C00989CE7 /* NanumGothic.ttf in Resources */,
+				B72DE90D2B16368C00989CE7 /* NanumGothicExtraBold.ttf in Resources */,
+				B72DE9042B16368C00989CE7 /* NanumGothicBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +291,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B72DE90B2B16368C00989CE7 /* NanumGothicLight.ttf in Resources */,
+				B72DE9082B16368C00989CE7 /* NanumGothic.ttf in Resources */,
+				B72DE90E2B16368C00989CE7 /* NanumGothicExtraBold.ttf in Resources */,
+				B72DE9052B16368C00989CE7 /* NanumGothicBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +306,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7719E822B161D8100351B1C /* ViewController.swift in Sources */,
+				B7719EB52B162C1A00351B1C /* NibCell.swift in Sources */,
 				B7719E7E2B161D8100351B1C /* AppDelegate.swift in Sources */,
 				B7719E802B161D8100351B1C /* SceneDelegate.swift in Sources */,
 			);
