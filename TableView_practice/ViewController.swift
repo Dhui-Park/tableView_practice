@@ -27,7 +27,9 @@ class ViewController: UIViewController {
         configureTableView()
         searchTextField.delegate = self
         searchTextField.borderStyle = .none
+        button.addTarget(self, action: #selector(btnClicked(_:)), for: .touchUpInside)
     }
+    
     
     fileprivate func configureTableView() {
         
@@ -38,6 +40,7 @@ class ViewController: UIViewController {
         self.myTableView.dataSource = self
         self.myTableView.delegate = self
     }
+    
 
 }
 
@@ -83,6 +86,11 @@ extension ViewController: UITextFieldDelegate {
     }
     
     // 4. x 버튼 클릭 -> textfield 내용 지우기
+    @objc func btnClicked(_ sender: UIButton) {
+        print(#fileID, #function, #line, "- button")
+        searchTextField.text = ""
+        searchMode(on: false, animated: true)
+    }
 }
 
 //MARK: - tableView datasource 관련

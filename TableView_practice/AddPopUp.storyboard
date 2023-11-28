@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NanumGothic.ttf">
+            <string>NanumGothic</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w6j-rt-GXS" userLabel="contentView">
+                                <rect key="frame" x="84" y="358.66666666666669" width="225" height="160.00000000000006"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="uA7-bv-LSt">
+                                        <rect key="frame" x="20" y="20" width="185" height="120"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="추가할 할일을 입력하세요!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gC5-06-2ip">
+                                                <rect key="frame" x="0.0" y="0.0" width="185" height="20"/>
+                                                <fontDescription key="fontDescription" name="NanumGothic" family="NanumGothic" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" verticalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="빡코딩하기" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KLx-uz-3Ll">
+                                                <rect key="frame" x="0.0" y="35" width="185" height="36"/>
+                                                <color key="backgroundColor" name="lightgray"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="36" id="KcW-G3-H9g"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="mh9-s7-fz3">
+                                                <rect key="frame" x="0.0" y="86" width="185" height="34"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lyd-pE-ybH">
+                                                        <rect key="frame" x="0.0" y="0.0" width="87" height="34"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="취소">
+                                                            <fontDescription key="titleFontDescription" name="NanumGothicBold" family="NanumGothic" pointSize="12"/>
+                                                            <color key="baseForegroundColor" name="darkgray"/>
+                                                            <color key="baseBackgroundColor" name="inactiveBtnGray"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A5l-rn-0fO">
+                                                        <rect key="frame" x="98" y="0.0" width="87" height="34"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="등록">
+                                                            <fontDescription key="titleFontDescription" name="NanumGothicBold" family="NanumGothic" pointSize="12"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="34" id="pZI-5T-9XY"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="uA7-bv-LSt" firstAttribute="centerX" secondItem="w6j-rt-GXS" secondAttribute="centerX" id="1Hu-c5-mlJ"/>
+                                    <constraint firstAttribute="width" constant="225" id="41k-Ea-c0Q"/>
+                                    <constraint firstItem="uA7-bv-LSt" firstAttribute="leading" secondItem="w6j-rt-GXS" secondAttribute="leading" constant="20" id="GBc-gL-q9K"/>
+                                    <constraint firstAttribute="bottom" secondItem="uA7-bv-LSt" secondAttribute="bottom" constant="20" id="TTI-wb-DyI"/>
+                                    <constraint firstItem="uA7-bv-LSt" firstAttribute="centerY" secondItem="w6j-rt-GXS" secondAttribute="centerY" id="djA-RD-EfH"/>
+                                    <constraint firstItem="uA7-bv-LSt" firstAttribute="top" secondItem="w6j-rt-GXS" secondAttribute="top" constant="20" id="hxu-ne-I4Y"/>
+                                    <constraint firstAttribute="trailing" secondItem="uA7-bv-LSt" secondAttribute="trailing" constant="20" id="iDz-EU-gsF"/>
+                                    <constraint firstAttribute="height" constant="160" id="joS-Cc-Eqh"/>
+                                    <constraint firstItem="uA7-bv-LSt" firstAttribute="centerX" secondItem="w6j-rt-GXS" secondAttribute="centerX" id="tSh-n0-nKG"/>
+                                    <constraint firstItem="uA7-bv-LSt" firstAttribute="centerY" secondItem="w6j-rt-GXS" secondAttribute="centerY" id="yLC-Ff-f3m"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.66000000000000003" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="w6j-rt-GXS" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="NhS-Vm-LsS"/>
+                            <constraint firstItem="w6j-rt-GXS" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="z0f-IO-NoM"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="46.564885496183201" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="darkgray">
+            <color red="0.41176470588235292" green="0.41960784313725491" blue="0.44705882352941179" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="inactiveBtnGray">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.90588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="lightgray">
+            <color red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
