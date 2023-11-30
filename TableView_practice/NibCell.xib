@@ -55,6 +55,9 @@
                                 <color key="tintColor" name="placeholderGray"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="trash.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="onDeleteBtnClicked:" destination="vuJ-7M-BCs" eventType="touchUpInside" id="KbJ-OV-MrS"/>
+                                </connections>
                             </button>
                         </subviews>
                     </stackView>
@@ -66,6 +69,11 @@
                     <constraint firstItem="tui-fh-S4K" firstAttribute="leading" secondItem="syy-VY-VUH" secondAttribute="leading" id="bto-Sn-8bx"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="deleteBtn" destination="hfM-OM-mqu" id="chL-fA-Xy9"/>
+                <outlet property="mySwitch" destination="Rpd-2z-GqN" id="wqF-s0-E47"/>
+                <outlet property="titleLabel" destination="Pco-mc-gcI" id="xm5-2x-P4g"/>
+            </connections>
             <point key="canvasLocation" x="-8.3969465648854964" y="-61.619718309859159"/>
         </tableViewCell>
     </objects>

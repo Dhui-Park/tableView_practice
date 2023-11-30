@@ -25,6 +25,12 @@
 		B72DE9182B16873D00989CE7 /* AddPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72DE9172B16873D00989CE7 /* AddPopUp.swift */; };
 		B72DE9192B16873D00989CE7 /* AddPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72DE9172B16873D00989CE7 /* AddPopUp.swift */; };
 		B72DE91A2B16873D00989CE7 /* AddPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72DE9172B16873D00989CE7 /* AddPopUp.swift */; };
+		B72DE91C2B168AF500989CE7 /* DeletePopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B72DE91B2B168AF500989CE7 /* DeletePopUp.storyboard */; };
+		B72DE91D2B168AF500989CE7 /* DeletePopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B72DE91B2B168AF500989CE7 /* DeletePopUp.storyboard */; };
+		B72DE91E2B168AF500989CE7 /* DeletePopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B72DE91B2B168AF500989CE7 /* DeletePopUp.storyboard */; };
+		B72DE9202B168B0C00989CE7 /* DeletePopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72DE91F2B168B0C00989CE7 /* DeletePopUp.swift */; };
+		B72DE9212B168B0C00989CE7 /* DeletePopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72DE91F2B168B0C00989CE7 /* DeletePopUp.swift */; };
+		B72DE9222B168B0C00989CE7 /* DeletePopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72DE91F2B168B0C00989CE7 /* DeletePopUp.swift */; };
 		B7719E7E2B161D8100351B1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7719E7D2B161D8100351B1C /* AppDelegate.swift */; };
 		B7719E802B161D8100351B1C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7719E7F2B161D8100351B1C /* SceneDelegate.swift */; };
 		B7719E822B161D8100351B1C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7719E812B161D8100351B1C /* ViewController.swift */; };
@@ -62,6 +68,8 @@
 		B72DE9022B16368C00989CE7 /* NanumGothicExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumGothicExtraBold.ttf; sourceTree = "<group>"; };
 		B72DE9132B16846600989CE7 /* AddPopUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddPopUp.storyboard; sourceTree = "<group>"; };
 		B72DE9172B16873D00989CE7 /* AddPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPopUp.swift; sourceTree = "<group>"; };
+		B72DE91B2B168AF500989CE7 /* DeletePopUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DeletePopUp.storyboard; sourceTree = "<group>"; };
+		B72DE91F2B168B0C00989CE7 /* DeletePopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeletePopUp.swift; sourceTree = "<group>"; };
 		B7719E7A2B161D8100351B1C /* TableView_practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableView_practice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7719E7D2B161D8100351B1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7719E7F2B161D8100351B1C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -139,6 +147,8 @@
 				B7719EB62B162C2400351B1C /* NibCell.xib */,
 				B72DE9132B16846600989CE7 /* AddPopUp.storyboard */,
 				B72DE9172B16873D00989CE7 /* AddPopUp.swift */,
+				B72DE91B2B168AF500989CE7 /* DeletePopUp.storyboard */,
+				B72DE91F2B168B0C00989CE7 /* DeletePopUp.swift */,
 			);
 			path = TableView_practice;
 			sourceTree = "<group>";
@@ -281,6 +291,7 @@
 				B72DE9142B16846600989CE7 /* AddPopUp.storyboard in Resources */,
 				B7719EB72B162C2400351B1C /* NibCell.xib in Resources */,
 				B7719E872B161D8400351B1C /* Assets.xcassets in Resources */,
+				B72DE91C2B168AF500989CE7 /* DeletePopUp.storyboard in Resources */,
 				B72DE9032B16368C00989CE7 /* NanumGothicBold.ttf in Resources */,
 				B72DE90C2B16368C00989CE7 /* NanumGothicExtraBold.ttf in Resources */,
 				B7719E852B161D8100351B1C /* Main.storyboard in Resources */,
@@ -295,6 +306,7 @@
 				B72DE9072B16368C00989CE7 /* NanumGothic.ttf in Resources */,
 				B72DE9152B16846600989CE7 /* AddPopUp.storyboard in Resources */,
 				B72DE90D2B16368C00989CE7 /* NanumGothicExtraBold.ttf in Resources */,
+				B72DE91D2B168AF500989CE7 /* DeletePopUp.storyboard in Resources */,
 				B72DE9042B16368C00989CE7 /* NanumGothicBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -307,6 +319,7 @@
 				B72DE9082B16368C00989CE7 /* NanumGothic.ttf in Resources */,
 				B72DE9162B16846600989CE7 /* AddPopUp.storyboard in Resources */,
 				B72DE90E2B16368C00989CE7 /* NanumGothicExtraBold.ttf in Resources */,
+				B72DE91E2B168AF500989CE7 /* DeletePopUp.storyboard in Resources */,
 				B72DE9052B16368C00989CE7 /* NanumGothicBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,6 +334,7 @@
 				B7719E822B161D8100351B1C /* ViewController.swift in Sources */,
 				B7719EB52B162C1A00351B1C /* NibCell.swift in Sources */,
 				B72DE9182B16873D00989CE7 /* AddPopUp.swift in Sources */,
+				B72DE9202B168B0C00989CE7 /* DeletePopUp.swift in Sources */,
 				B7719E7E2B161D8100351B1C /* AppDelegate.swift in Sources */,
 				B7719E802B161D8100351B1C /* SceneDelegate.swift in Sources */,
 			);
@@ -330,6 +344,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B72DE9212B168B0C00989CE7 /* DeletePopUp.swift in Sources */,
 				B72DE9192B16873D00989CE7 /* AddPopUp.swift in Sources */,
 				B7719E952B161D8400351B1C /* TableView_practiceTests.swift in Sources */,
 			);
@@ -342,6 +357,7 @@
 				B7719E9F2B161D8500351B1C /* TableView_practiceUITests.swift in Sources */,
 				B7719EA12B161D8500351B1C /* TableView_practiceUITestsLaunchTests.swift in Sources */,
 				B72DE91A2B16873D00989CE7 /* AddPopUp.swift in Sources */,
+				B72DE9222B168B0C00989CE7 /* DeletePopUp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

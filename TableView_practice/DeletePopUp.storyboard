@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KyX-za-WO6">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NanumGothic.ttf">
+            <string>NanumGothic</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Delete Pop Up-->
+        <scene sceneID="Bc8-0S-AYI">
+            <objects>
+                <viewController storyboardIdentifier="DeletePopUp" useStoryboardIdentifierAsRestorationIdentifier="YES" id="KyX-za-WO6" customClass="DeletePopUp" customModule="TableView_practice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XUc-In-Qgx">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MtQ-eV-DIF" userLabel="contentView">
+                                <rect key="frame" x="84" y="358.66666666666669" width="225" height="160.00000000000006"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="wcA-G8-09M">
+                                        <rect key="frame" x="20" y="20" width="185" height="120"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="할일을 삭제하시겠습니까?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w57-ke-dRf">
+                                                <rect key="frame" x="0.0" y="0.0" width="185" height="14"/>
+                                                <fontDescription key="fontDescription" name="NanumGothic" family="NanumGothic" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l2c-1N-jtg">
+                                                <rect key="frame" x="0.0" y="29" width="185" height="42"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pK3-H2-2lO">
+                                                        <rect key="frame" x="72" y="10.666666666666627" width="41.333333333333343" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="pK3-H2-2lO" firstAttribute="centerY" secondItem="l2c-1N-jtg" secondAttribute="centerY" id="Znm-Bz-edF"/>
+                                                    <constraint firstItem="pK3-H2-2lO" firstAttribute="centerX" secondItem="l2c-1N-jtg" secondAttribute="centerX" id="ulM-IF-W8n"/>
+                                                </constraints>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="a9d-Cx-b0f">
+                                                <rect key="frame" x="0.0" y="86" width="185" height="34"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v6V-4D-NqQ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="87" height="34"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="취소">
+                                                            <fontDescription key="titleFontDescription" name="NanumGothicBold" family="NanumGothic" pointSize="12"/>
+                                                            <color key="baseForegroundColor" name="darkgray"/>
+                                                            <color key="baseBackgroundColor" name="inactiveBtnGray"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="onCancelBtnClicked:" destination="KyX-za-WO6" eventType="touchUpInside" id="OBh-0a-lnG"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CUP-Xh-wj9">
+                                                        <rect key="frame" x="98" y="0.0" width="87" height="34"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="등록">
+                                                            <fontDescription key="titleFontDescription" name="NanumGothicBold" family="NanumGothic" pointSize="12"/>
+                                                            <color key="baseBackgroundColor" name="deleteRed"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="onSubmitBtnClicked:" destination="KyX-za-WO6" eventType="touchUpInside" id="QTD-pb-6tA"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="34" id="eJE-UT-69u"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="wcA-G8-09M" firstAttribute="top" secondItem="MtQ-eV-DIF" secondAttribute="top" constant="20" id="10W-kE-x2p"/>
+                                    <constraint firstAttribute="trailing" secondItem="wcA-G8-09M" secondAttribute="trailing" constant="20" id="4vo-bc-6WT"/>
+                                    <constraint firstItem="wcA-G8-09M" firstAttribute="centerY" secondItem="MtQ-eV-DIF" secondAttribute="centerY" id="EFY-za-juh"/>
+                                    <constraint firstAttribute="width" constant="225" id="RId-aa-f2T"/>
+                                    <constraint firstAttribute="bottom" secondItem="wcA-G8-09M" secondAttribute="bottom" constant="20" id="Ryy-P3-4pc"/>
+                                    <constraint firstItem="wcA-G8-09M" firstAttribute="centerX" secondItem="MtQ-eV-DIF" secondAttribute="centerX" id="Vf5-IY-LQ3"/>
+                                    <constraint firstItem="wcA-G8-09M" firstAttribute="centerY" secondItem="MtQ-eV-DIF" secondAttribute="centerY" id="Z4N-yB-08p"/>
+                                    <constraint firstItem="wcA-G8-09M" firstAttribute="leading" secondItem="MtQ-eV-DIF" secondAttribute="leading" constant="20" id="gn3-07-Bwp"/>
+                                    <constraint firstItem="wcA-G8-09M" firstAttribute="centerX" secondItem="MtQ-eV-DIF" secondAttribute="centerX" id="vIe-vR-MXd"/>
+                                    <constraint firstAttribute="height" constant="160" id="yW9-5F-XOo"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Pvg-6C-kFY"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.66000000000000003" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="MtQ-eV-DIF" firstAttribute="centerY" secondItem="Pvg-6C-kFY" secondAttribute="centerY" id="Bjz-I2-Xjd"/>
+                            <constraint firstItem="MtQ-eV-DIF" firstAttribute="centerX" secondItem="Pvg-6C-kFY" secondAttribute="centerX" id="Qjm-mZ-7Cx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cancelBtn" destination="v6V-4D-NqQ" id="7Ob-Y1-OoH"/>
+                        <outlet property="contentView" destination="MtQ-eV-DIF" id="IgX-iH-gxE"/>
+                        <outlet property="submitBtn" destination="CUP-Xh-wj9" id="RmQ-aW-izA"/>
+                        <outlet property="titleLabel" destination="pK3-H2-2lO" id="v5n-ZO-MAZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Wj-Vr-waz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="46.564885496183201" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="darkgray">
+            <color red="0.41176470588235292" green="0.41960784313725491" blue="0.44705882352941179" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="deleteRed">
+            <color red="0.8901960784313725" green="0.36862745098039218" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="inactiveBtnGray">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.90588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

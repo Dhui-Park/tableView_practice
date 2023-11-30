@@ -17,7 +17,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TableView_practice" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Main" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="TableView_practice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -29,21 +29,46 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="N1t-Vu-5wb">
-                                <rect key="frame" x="268.33333333333331" y="82" width="108.66666666666669" height="30.333333333333329"/>
+                                <rect key="frame" x="153" y="82" width="224" height="30.333333333333329"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SJn-Rq-8mS">
-                                        <rect key="frame" x="0.0" y="0.0" width="50.333333333333336" height="30.333333333333332"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="30.333333333333332"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="kgO-Lr-ryS"/>
+                                        </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="필터">
                                             <fontDescription key="titleFontDescription" name="NanumGothicBold" family="NanumGothic" pointSize="14"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="onFilterBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EQ3-jk-utK"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gdm-Oz-vzd">
-                                        <rect key="frame" x="58.333333333333371" y="0.0" width="50.333333333333343" height="30.333333333333332"/>
+                                        <rect key="frame" x="68" y="0.0" width="60" height="30.333333333333332"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="H1c-AH-Zt6"/>
+                                        </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="추가">
                                             <fontDescription key="titleFontDescription" name="NanumGothicBold" family="NanumGothic" pointSize="14"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="onAddBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="90U-kU-b3O"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RcE-US-ogE">
+                                        <rect key="frame" x="136" y="0.0" width="88" height="30.333333333333332"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="88" id="3Ke-6B-nqk"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="선택 삭제">
+                                            <fontDescription key="titleFontDescription" name="NanumGothicBold" family="NanumGothic" pointSize="14"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="selectedDelete:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O5D-KX-hc7"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -104,6 +129,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="addBtn" destination="Gdm-Oz-vzd" id="JNJ-l1-Pyx"/>
+                        <outlet property="filterBtn" destination="SJn-Rq-8mS" id="oih-No-qIV"/>
                         <outlet property="myTableView" destination="XDR-Zh-cRt" id="1cN-7R-Uqx"/>
                         <outlet property="searchTextField" destination="SQw-cV-JCC" id="JD8-1Y-GyB"/>
                         <outlet property="textFieldStackView" destination="mBl-nl-9lu" id="aRf-PS-cR3"/>
